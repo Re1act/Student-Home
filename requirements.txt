@@ -3,5 +3,5 @@ flask_session
 datetime
 flask_sqlalchemy
 werkzeug
-gunicorn
+waitress
 flask_migrate
