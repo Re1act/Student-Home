@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+    {% block title %} Home {% endblock %}
+    {% block body %}
+        <div class = "mb-4">
+            <h1> Current Assignments due </h1>
+        </div>
+        <div class = "mt-4">
+            <table class = "table table-light table-striped text-dark">
+                <thead class = "thead-dark">
+                    <th> Assignment </th>
+                    <th> Due date</th>
+                    <th> Current Status</th>
+                </thead>
+                <tbody>
+                    {% for i in assignments %}
+                        <tr>
+                            <td> <strong>{{ i.title }}</strong></td>
+                            <td> {{ i.due_date }}</td>
+                            <td> {{ i.status }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endblock %}

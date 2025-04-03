@@ -1,0 +1,5 @@
+flask
+flask_session
+datetime
+flask_sqlalchemy
+werkzeug.security

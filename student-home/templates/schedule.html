@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %} Schedule {% endblock %}
+
+{% block body %}
+    <table class = "table table-bordered table-light table-striped text-dark mt-4">
+        <thead class = "thead-dark">
+            <th> Class Name</th>
+            <th> Location</th>
+            <th> Time </th>
+        </thead>
+        <tbody>
+            {% for i in schedule %}
+                <tr>
+                    <td> {{i.class_name}}</td>
+                    <td>{{i.location}}</td>
+                    <td>{{i.time}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a id = "edit" href = "/edit_schedule" class = "btn btn-primary"> Edit</a>
+{% endblock %}

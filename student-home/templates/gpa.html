@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+{% endblock %}
+{% block title %} Calculate GPA {% endblock %}
+{% block body %}
+    <h1 class = "mb-4"> Calculate GPA </h1>
+    <form id="gpaForm" >
+        <label for="numClasses">Number of Classes:</label>
+        <input type="number" id="numClasses" name="numClasses" min="1" max="10" required>
+
+        <div id="gradesContainer"></div>
+
+        <button class="btn btn-primary" type="submit">Calculate GPA</button>
+    </form>
+
+    <div id="gpaResult"></div>
+{% endblock %}
