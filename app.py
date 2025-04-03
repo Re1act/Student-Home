@@ -63,7 +63,7 @@ def check_authentication():
     if "user_id" in session and request.endpoint == "register":
         return redirect(url_for("index"))
     elif "user_id" not in session and request.endpoint not in ["login", "register", "static"]:
-        return redirect(url_for("login"))
+        return redirect(url_for("register"))
 
 # Register route
 @app.route("/register", methods=["GET", "POST"])
