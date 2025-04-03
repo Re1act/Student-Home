@@ -4,6 +4,7 @@ from datetime import timedelta, datetime, time
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_migrate import Migrate
+
 # Initialize Flask app
 app = Flask(__name__)
 
@@ -283,9 +284,3 @@ def edit_schedule():
             return f"Error: {str(error)}"
 
     return redirect(url_for("schedule"))
-
-# Running app
-if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
-    app.run()
