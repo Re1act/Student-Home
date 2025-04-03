@@ -4,4 +4,3 @@ datetime
 flask_sqlalchemy
 werkzeug
 gunicorn
-wsgi
