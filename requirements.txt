@@ -4,3 +4,4 @@ datetime
 flask_sqlalchemy
 werkzeug
 gunicorn
+flask_migrate
