@@ -1,6 +1,7 @@
 # Student Home
 
 #### Video Demo: [Watch here](https://www.youtube.com/watch?v=8J_4LqUM2UM)
+#### URL: https://student-home.onrender.com/
 
 #### Description:
 Student Home is a **Flask-based web application** designed to help students efficiently organize and manage their academic lives. The application integrates several essential features, such as a GPA calculator, a class schedule manager, and an assignment tracker, all aimed at helping students stay organized, track their progress, and maintain focus on their academic goals. By streamlining these critical aspects of student life, **Student Home** provides users with a convenient platform to keep their academic information in one place, making it easier to stay on top of deadlines, assignments, and grades. Whether you're a high school student, a college student, or anyone pursuing an education, this app can help you optimize your academic experience.
