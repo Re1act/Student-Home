@@ -25,12 +25,6 @@ Student Home is a **Flask-based web application** designed to help students effi
   - Supports the calculation of weighted GPA for students in advanced courses like AP and IB.
   - A useful tool for students who need to keep track of their academic performance throughout the semester.
 
-- **User Authentication 🔐**
-  - Secure login and registration system using Flask, ensuring that each user’s data is protected.
-  - Each user has a private and personalized dashboard with their own assignments and schedule.
-  - Passwords are securely hashed using `werkzeug.security` for safe storage.
-  - Authentication ensures that no one else can view or alter a user’s personal academic data.
-
 ## Project Structure:
 - `app.py`: The core file that powers the Flask application. It handles routing, user authentication, form processing, data handling with SQLAlchemy, and rendering templates.
 - `templates/`: Contains HTML files for rendering the frontend pages. These templates manage the display of the GPA calculator, class schedule, assignments, and user login/registration pages.
